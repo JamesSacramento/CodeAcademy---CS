@@ -1,0 +1,43 @@
+$ pwd
+/home/ccuser/workspace/bicycle-world-ii
+$ ls
+bmx  brands.txt  freight  mountain  racing
+$ cd freight
+$ ls
+messenger  porteur
+$ cd porteur/
+$ cd ../..
+$ pwd
+/home/ccuser/workspace/bicycle-world-ii
+$ cd mountain/downhill
+$ ls
+dirt.txt  heavyweight  lightweight  mud.txt  safety
+$ touct dirt.txt mud.txt
+bash: touct: command not found
+$ touch dirt.txt mud.txt
+$ ls
+dirt.txt  heavyweight  lightweight  mud.txt  safety
+$ cd ../..
+$ pwd
+/home/ccuser/workspace/bicycle-world-ii
+$ mkdir downhill/safety
+mkdir: cannot create directory ‘downhill/safety’: No such file or directory
+$ cd downhill
+bash: cd: downhill: No such file or directory
+$ pwd
+/home/ccuser/workspace/bicycle-world-ii
+$ ls
+bmx  brands.txt  freight  mountain  racing
+$ cd mountain/downhill
+$ mkdir safety
+mkdir: cannot create directory ‘safety’: File exists
+$ cd ../..
+$ mkdir bmx
+mkdir: cannot create directory ‘bmx’: File exists
+$ pwd
+/home/ccuser/workspace/bicycle-world-ii
+$ ls
+bmx  brands.txt  freight  mountain  racing
+$ mkdir bmx/tricks.txt
+mkdir: cannot create directory ‘bmx/tricks.txt’: File exists
+$ 
